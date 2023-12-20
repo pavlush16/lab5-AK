@@ -32,7 +32,7 @@ static int __init hello_init(void)
 
     	pr_info("Count: %d\n", amount);
 
-    	BUG_ON(amount == 0); // Використовуйте BUG_ON для викидання помилки, якщо amount = 0
+    	BUG_ON(amount == 0);
 
     	if (amount >= 5 && amount <= 10)
         	pr_warn("The parameter is %d, between 5 and 10, enter number less than 5", amount);
